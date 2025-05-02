@@ -1,5 +1,7 @@
 # The URL the site will be built for
 base_url = "https://csd-trans.com"
+title = "创顺达国际物流（深圳）有限公司"
+description = "创顺达国际物流（深圳）有限公司"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
