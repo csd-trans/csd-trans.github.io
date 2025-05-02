@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <img src="{{ get_url(path='images/logo/logo-white.png') }}" alt="{{ config.title }}" class="hero-logo">
+        <h1>专业运输服务</h1>
+        <p>为您的运输需求提供可靠、高效且具有成本效益的解决方案</p>
+        <a href="{{ config.base_url }}/contact" class="cta-button">获取报价</a>
+    </div>
+</section>
+
+<section class="services">
+    <h2>我们的服务</h2>
+    <div class="service-grid">
+        <div class="service-card">
+            <img src="{{ get_url(path='images/services/freight.jpg') }}" alt="货物运输">
+            <h3>货物运输</h3>
+            <p>安全可靠的全国货物运输服务</p>
+        </div>
+        <div class="service-card">
+            <img src="{{ get_url(path='images/services/shipping.jpg') }}" alt="国际运输">
+            <h3>国际运输</h3>
+            <p>具有竞争力的全球运输解决方案</p>
+        </div>
+        <div class="service-card">
+            <img src="{{ get_url(path='images/services/warehouse.jpg') }}" alt="仓储服务">
+            <h3>仓储服务</h3>
+            <p>安全的货物存储解决方案</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-preview">
+    <div class="about-content">
+        <h2>为什么选择我们</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <img src="{{ get_url(path='images/icons/support.png') }}" alt="24/7支持">
+                <h4>24/7客户支持</h4>
+            </div>
+            <div class="feature">
+                <img src="{{ get_url(path='images/icons/tracking.png') }}" alt="实时追踪">
+                <h4>实时货物追踪</h4>
+            </div>
+            <div class="feature">
+                <img src="{{ get_url(path='images/icons/pricing.png') }}" alt="价格优势">
+                <h4>具有竞争力的价格</h4>
+            </div>
+            <div class="feature">
+                <img src="{{ get_url(path='images/icons/team.png') }}" alt="专业团队">
+                <h4>经验丰富的团队</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>客户评价</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial">
+            <img src="{{ get_url(path='images/team/client1.jpg') }}" alt="张三" class="testimonial-avatar">
+            <p>"服务优质，配送可靠。强烈推荐！"</p>
+            <cite>- 张三，ABC公司</cite>
+        </div>
+        <div class="testimonial">
+            <img src="{{ get_url(path='images/team/client2.jpg') }}" alt="李四" class="testimonial-avatar">
+            <p>"CSD运输团队在我们的供应链成功中发挥了关键作用。"</p>
+            <cite>- 李四，XYZ公司</cite>
+        </div>
+    </div>
+</section>
+
+<section class="certifications">
+    <h2>我们的认证</h2>
+    <div class="certification-grid">
+        <img src="{{ get_url(path='images/certifications/iso9001.png') }}" alt="ISO 9001:2015">
+        <img src="{{ get_url(path='images/certifications/fmcsa.png') }}" alt="FMCSA">
+        <img src="{{ get_url(path='images/certifications/epa.png') }}" alt="EPA SmartWay">
+        <img src="{{ get_url(path='images/certifications/ctpat.png') }}" alt="C-TPAT">
+    </div>
+</section>
+{% endblock content %} 

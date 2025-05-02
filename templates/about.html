@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="about-hero">
+    <div class="about-hero-content">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="about-section">
+        <h2>我们的故事</h2>
+        <p>{{ page.extra.story | default(value="CSD运输成立于2005年，从一家小型本地运输公司发展成为全球物流服务提供商。我们对卓越和客户满意度的承诺是我们成功的驱动力。") }}</p>
+    </div>
+
+    <div class="about-section">
+        <h2>我们的使命</h2>
+        <p>{{ page.extra.mission | default(value="提供可靠、高效且具有成本效益的运输解决方案，同时保持最高的安全和质量标准。") }}</p>
+    </div>
+
+    <div class="about-section">
+        <h2>我们的团队</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="{{ get_url(path='images/team/ceo.jpg') }}" alt="张三">
+                <h3>张三</h3>
+                <p>首席执行官</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ get_url(path='images/team/coo.jpg') }}" alt="李四">
+                <h3>李四</h3>
+                <p>首席运营官</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ get_url(path='images/team/cto.jpg') }}" alt="王五">
+                <h3>王五</h3>
+                <p>首席技术官</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <h2>我们的价值观</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <img src="{{ get_url(path='images/icons/safety.png') }}" alt="安全">
+                <h3>安全第一</h3>
+                <p>我们优先考虑员工、客户和公众的安全</p>
+            </div>
+            <div class="value-card">
+                <img src="{{ get_url(path='images/icons/customer.png') }}" alt="客户至上">
+                <h3>客户至上</h3>
+                <p>我们致力于超越客户期望</p>
+            </div>
+            <div class="value-card">
+                <img src="{{ get_url(path='images/icons/innovation.png') }}" alt="创新">
+                <h3>创新</h3>
+                <p>我们通过技术和流程创新不断改进服务</p>
+            </div>
+            <div class="value-card">
+                <img src="{{ get_url(path='images/icons/sustainability.png') }}" alt="可持续发展">
+                <h3>可持续发展</h3>
+                <p>我们致力于减少对环境的影响</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <h2>我们的认证</h2>
+        <div class="certification-grid">
+            <img src="{{ get_url(path='images/certifications/iso9001.png') }}" alt="ISO 9001:2015">
+            <img src="{{ get_url(path='images/certifications/fmcsa.png') }}" alt="FMCSA">
+            <img src="{{ get_url(path='images/certifications/epa.png') }}" alt="EPA SmartWay">
+            <img src="{{ get_url(path='images/certifications/ctpat.png') }}" alt="C-TPAT">
+        </div>
+    </div>
+</section>
+{% endblock content %} 

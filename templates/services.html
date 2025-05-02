@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="services-hero">
+    <div class="services-hero-content">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
+    </div>
+</section>
+
+<section class="services-content">
+    <div class="service-grid">
+        <div class="service-card">
+            <img src="{{ get_url(path='images/services/freight.jpg') }}" alt="货物运输">
+            <h3>货物运输</h3>
+            <p>安全可靠的全国货物运输服务</p>
+            <ul>
+                <li>整车运输服务</li>
+                <li>零担运输服务</li>
+                <li>特殊货物专用设备</li>
+                <li>实时货物追踪</li>
+            </ul>
+        </div>
+        <div class="service-card">
+            <img src="{{ get_url(path='images/services/shipping.jpg') }}" alt="国际运输">
+            <h3>国际运输</h3>
+            <p>具有竞争力的全球运输解决方案</p>
+            <ul>
+                <li>海运服务</li>
+                <li>空运服务</li>
+                <li>清关服务</li>
+                <li>文件协助</li>
+            </ul>
+        </div>
+        <div class="service-card">
+            <img src="{{ get_url(path='images/services/warehouse.jpg') }}" alt="仓储服务">
+            <h3>仓储服务</h3>
+            <p>安全的货物存储解决方案</p>
+            <ul>
+                <li>温控设施</li>
+                <li>库存管理</li>
+                <li>越库配送服务</li>
+                <li>分销支持</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>准备开始合作？</h2>
+        <p>立即联系我们，获取定制化运输解决方案。</p>
+        <a href="{{ config.base_url }}/contact" class="cta-button">获取报价</a>
+    </div>
+</section>
+{% endblock content %} 

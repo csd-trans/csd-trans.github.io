@@ -1,0 +1,5 @@
+{%- if path is defined -%}
+    {{- get_url(path=path) -}}
+{%- else -%}
+    {{- config.base_url -}}
+{%- endif -%} 

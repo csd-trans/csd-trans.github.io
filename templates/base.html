@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <meta name="description" content="{{ config.extra.description }}">
+    
+    <link rel="stylesheet" href="{{ get_url(path='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .nav {
+            background-color: #ffffff;
+            padding: 1rem 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        .nav-brand .logo-img {
+            height: 40px;
+            margin-right: 1rem;
+        }
+
+        .nav-brand .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+
+        .mobile-menu-button {
+            display: none;
+            background: none;
+            border: none;
+            color: #2c3e50;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            color: #2c3e50;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .nav-link i {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(44, 62, 80, 0.1);
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+        }
+
+        main {
+            padding-top: 80px;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                padding: 1rem;
+            }
+
+            .mobile-menu-button {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #ffffff;
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-link {
+                padding: 1rem;
+                justify-content: center;
+            }
+        }
+    </style>
+    
+    {% block extra_head %}{% endblock extra_head %}
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="{{ config.base_url }}" class="logo-link">
+                    <span class="logo-text" style="font-size: 1.8rem; font-weight: bold; color: #2c3e50;">创顺达</span>
+                    <span class="logo-subtext" style="font-size: 1rem; color: #7f8c8d;">国际物流</span>
+                </a>
+            </div>
+            <button class="mobile-menu-button" aria-label="切换菜单">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-menu">
+                <a href="{{ config.base_url }}" class="nav-link {% if current_path == '/' %}active{% endif %}">
+                    <i class="fas fa-home"></i>
+                    <span>首页</span>
+                </a>
+                <a href="{{ config.base_url }}/services" class="nav-link {% if current_path is containing('/services') %}active{% endif %}">
+                    <i class="fas fa-truck"></i>
+                    <span>服务</span>
+                </a>
+                <a href="{{ config.base_url }}/about" class="nav-link {% if current_path is containing('/about') %}active{% endif %}">
+                    <i class="fas fa-info-circle"></i>
+                    <span>关于</span>
+                </a>
+                <a href="{{ config.base_url }}/contact" class="nav-link {% if current_path is containing('/contact') %}active{% endif %}">
+                    <i class="fas fa-envelope"></i>
+                    <span>联系</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock content %}
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 地址: 深圳市龙华区龙华街道富康社区民清路17号光辉科技园C栋一层</p>
+                <p><i class="fas fa-envelope"></i> 邮箱: info@csd-trans.com</p>
+                <p><i class="fas fa-phone"></i> 电话: +86 755 1234 5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ now() | date(format="%Y") }} 创顺达国际物流（深圳）有限公司. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="{{ get_url(path='js/main.js') }}"></script>
+    {% block extra_js %}{% endblock extra_js %}
+</body>
+</html> 
