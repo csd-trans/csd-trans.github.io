@@ -3,8 +3,8 @@
 {% block content %}
 <section class="services-hero">
     <div class="services-hero-content">
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.description }}</p>
+        <h1>我们的服务</h1>
+        <p>提供全方位的物流解决方案，满足您的运输需求</p>
     </div>
 </section>
 
@@ -12,45 +12,78 @@
     <div class="service-grid">
         <div class="service-card">
             <img src="{{ get_url(path='images/services/freight.jpg') }}" alt="货物运输">
-            <h3>货物运输</h3>
-            <p>安全可靠的全国货物运输服务</p>
-            <ul>
-                <li>整车运输服务</li>
-                <li>零担运输服务</li>
-                <li>特殊货物专用设备</li>
-                <li>实时货物追踪</li>
-            </ul>
+            <div class="service-card-content">
+                <h3>货物运输</h3>
+                <p>提供安全可靠的全国货物运输服务，确保您的货物准时送达。</p>
+                <ul>
+                    <li>全国范围内的货物运输</li>
+                    <li>专业的货物装卸服务</li>
+                    <li>实时货物追踪系统</li>
+                    <li>灵活的运输方案</li>
+                </ul>
+            </div>
         </div>
+
         <div class="service-card">
             <img src="{{ get_url(path='images/services/shipping.jpg') }}" alt="国际运输">
-            <h3>国际运输</h3>
-            <p>具有竞争力的全球运输解决方案</p>
-            <ul>
-                <li>海运服务</li>
-                <li>空运服务</li>
-                <li>清关服务</li>
-                <li>文件协助</li>
-            </ul>
+            <div class="service-card-content">
+                <h3>国际运输</h3>
+                <p>提供具有竞争力的全球运输解决方案，连接世界各地的市场。</p>
+                <ul>
+                    <li>海运和空运服务</li>
+                    <li>进出口清关服务</li>
+                    <li>全球物流网络</li>
+                    <li>多式联运解决方案</li>
+                </ul>
+            </div>
         </div>
+
         <div class="service-card">
             <img src="{{ get_url(path='images/services/warehouse.jpg') }}" alt="仓储服务">
-            <h3>仓储服务</h3>
-            <p>安全的货物存储解决方案</p>
-            <ul>
-                <li>温控设施</li>
-                <li>库存管理</li>
-                <li>越库配送服务</li>
-                <li>分销支持</li>
-            </ul>
+            <div class="service-card-content">
+                <h3>仓储服务</h3>
+                <p>提供安全、高效的仓储解决方案，满足您的货物存储需求。</p>
+                <ul>
+                    <li>现代化仓储设施</li>
+                    <li>专业的库存管理</li>
+                    <li>订单处理和配送</li>
+                    <li>定制化仓储方案</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="features-grid">
+        <div class="feature">
+            <img src="{{ get_url(path='images/icons/innovation.png') }}" alt="全球网络">
+            <h4>全球网络</h4>
+            <p>覆盖全球的物流网络，确保您的货物能够到达任何目的地</p>
+        </div>
+        <div class="feature">
+            <img src="{{ get_url(path='images/icons/tracking.png') }}" alt="先进技术">
+            <h4>先进技术</h4>
+            <p>采用最新的物流技术，提供实时追踪和智能管理</p>
+        </div>
+        <div class="feature">
+            <img src="{{ get_url(path='images/icons/customer.png') }}" alt="定制服务">
+            <h4>定制服务</h4>
+            <p>根据您的具体需求，提供个性化的物流解决方案</p>
+        </div>
+        <div class="feature">
+            <img src="{{ get_url(path='images/icons/safety.png') }}" alt="安全保障">
+            <h4>安全保障</h4>
+            <p>严格的安全标准和保险保障，确保货物安全送达</p>
         </div>
     </div>
 </section>
 
 <section class="cta-section">
     <div class="cta-content">
-        <h2>准备开始合作？</h2>
-        <p>立即联系我们，获取定制化运输解决方案。</p>
-        <a href="{{ config.base_url }}/contact" class="cta-button">获取报价</a>
+        <h2>准备好开始您的运输之旅了吗？</h2>
+        <p>联系我们获取专业的物流解决方案</p>
+        <a href="{{ config.base_url }}/contact" class="cta-button">联系我们</a>
     </div>
 </section>
 {% endblock content %} 
