@@ -16,7 +16,7 @@ weight = 2
 <section class="services-content">
     <div class="service-grid">
         <div class="service-card">
-            <img src="{{ get_url(path='images/services/freight.jpg') }}" alt="{% if lang == 'en' %}Freight Transportation{% elif lang == 'zh' %}货运运输{% elif lang == 'ja' %}貨物輸送{% endif %}">
+            <img src="{{ get_url(path='images/freight.png') }}" alt="{% if lang == 'en' %}Freight Transportation{% elif lang == 'zh' %}货运运输{% elif lang == 'ja' %}貨物輸送{% endif %}">
             <div class="service-card-content">
                 <h3>{% if lang == "en" %}Freight Transportation{% elif lang == "zh" %}货运运输{% elif lang == "ja" %}貨物輸送{% endif %}</h3>
                 <p>{% if lang == "en" %}Efficient and reliable freight transportation services across all major routes{% elif lang == "zh" %}高效可靠的货运服务，覆盖所有主要路线{% elif lang == "ja" %}主要ルートをカバーする効率的で信頼性の高い貨物輸送サービス{% endif %}</p>
@@ -29,7 +29,7 @@ weight = 2
         </div>
 
         <div class="service-card">
-            <img src="{{ get_url(path='images/services/shipping.jpg') }}" alt="{% if lang == 'en' %}International Shipping{% elif lang == 'zh' %}国际航运{% elif lang == 'ja' %}国際輸送{% endif %}">
+            <img src="{{ get_url(path='images/shipping.png') }}" alt="{% if lang == 'en' %}International Shipping{% elif lang == 'zh' %}国际航运{% elif lang == 'ja' %}国際輸送{% endif %}">
             <div class="service-card-content">
                 <h3>{% if lang == "en" %}International Shipping{% elif lang == "zh" %}国际航运{% elif lang == "ja" %}国際輸送{% endif %}</h3>
                 <p>{% if lang == "en" %}Global shipping solutions with customs clearance and documentation support{% elif lang == "zh" %}提供清关和文件支持的全球航运解决方案{% elif lang == "ja" %}通関手続きと書類サポートを提供するグローバルな輸送ソリューション{% endif %}</p>
@@ -42,7 +42,7 @@ weight = 2
         </div>
 
         <div class="service-card">
-            <img src="{{ get_url(path='images/services/warehouse.jpg') }}" alt="{% if lang == 'en' %}Warehousing{% elif lang == 'zh' %}仓储服务{% elif lang == 'ja' %}倉庫サービス{% endif %}">
+            <img src="{{ get_url(path='images/warehouse.png') }}" alt="{% if lang == 'en' %}Warehousing{% elif lang == 'zh' %}仓储服务{% elif lang == 'ja' %}倉庫サービス{% endif %}">
             <div class="service-card-content">
                 <h3>{% if lang == "en" %}Warehousing{% elif lang == "zh" %}仓储服务{% elif lang == "ja" %}倉庫サービス{% endif %}</h3>
                 <p>{% if lang == "en" %}Secure and efficient warehousing solutions with inventory management{% elif lang == "zh" %}提供库存管理的安全高效仓储解决方案{% elif lang == "ja" %}在庫管理を提供する安全で効率的な倉庫ソリューション{% endif %}</p>
