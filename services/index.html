@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>创顺达国际物流（深圳）有限公司</title>
+    <meta name="description" content="专业运输服务">
+    
+    <link rel="stylesheet" href="https://csd-trans.com/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .nav {
+            background-color: #ffffff;
+            padding: 1rem 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        .nav-brand .logo-img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        .nav-brand .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+
+        .mobile-menu-button {
+            display: none;
+            background: none;
+            border: none;
+            color: #2c3e50;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            color: #2c3e50;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .nav-link i {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(44, 62, 80, 0.1);
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+        }
+
+        main {
+            padding-top: 80px;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                padding: 1rem;
+            }
+
+            .mobile-menu-button {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #ffffff;
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-link {
+                padding: 1rem;
+                justify-content: center;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="https:&#x2F;&#x2F;csd-trans.com" class="logo-link">
+                    <img src="https://csd-trans.com/images/logo.png" alt="创顺达国际" class="logo-img">
+                </a>
+            </div>
+            <button class="mobile-menu-button" aria-label="切换菜单">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-menu">
+                <a href="https:&#x2F;&#x2F;csd-trans.com" class="nav-link ">
+                    <i class="fas fa-home"></i>
+                    <span>首页</span>
+                </a>
+                <a href="https:&#x2F;&#x2F;csd-trans.com/services" class="nav-link active">
+                    <i class="fas fa-truck"></i>
+                    <span>服务</span>
+                </a>
+                <a href="https:&#x2F;&#x2F;csd-trans.com/about" class="nav-link ">
+                    <i class="fas fa-info-circle"></i>
+                    <span>关于</span>
+                </a>
+                <a href="https:&#x2F;&#x2F;csd-trans.com/contact" class="nav-link ">
+                    <i class="fas fa-envelope"></i>
+                    <span>联系</span>
+                </a>
+                <a href="http://csdawl.nextsls.com/tracking/app#/tracking" target="_blank" class="nav-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>订单跟踪</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+<section class="services-hero">
+    <div class="services-hero-content">
+        <h1>我们的服务</h1>
+        <p>专业、高效、可靠的物流解决方案</p>
+    </div>
+</section>
+
+<section class="services-content">
+    <div class="service-grid">
+        <div class="service-card">
+            <img src="https://csd-trans.com/images/freight.png" alt="日本空运">
+            <div class="service-card-content">
+                <h3>日本空运</h3>
+                <p>提供快速、安全的空运服务，确保您的货物准时送达。</p>
+                <ul>
+                    <li>门到门服务</li>
+                    <li>实时追踪</li>
+                    <li>专业报关</li>
+                    <li>快速清关</li>
+                </ul>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="https://csd-trans.com/images/shipping.png" alt="日本普船/快船">
+            <div class="service-card-content">
+                <h3>日本普船/快船</h3>
+                <p>经济实惠的海运服务，适合大批量货物运输。</p>
+                <ul>
+                    <li>定期班轮</li>
+                    <li>整柜/拼箱服务</li>
+                    <li>全程跟踪</li>
+                    <li>专业装卸</li>
+                </ul>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="https://csd-trans.com/images/warehouse.png" alt="海外仓、仓储、一件代发">
+            <div class="service-card-content">
+                <h3>海外仓、仓储、一件代发</h3>
+                <p>提供专业的仓储和配送服务，帮助您优化供应链。</p>
+                <ul>
+                    <li>专业仓储管理</li>
+                    <li>一件代发服务</li>
+                    <li>库存管理</li>
+                    <li>订单处理</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="features-grid">
+        <div class="feature">
+            <img src="https://csd-trans.com/images/icons/innovation.png" alt="全球网络">
+            <h4>全球网络</h4>
+            <p>覆盖全球的物流网络，确保您的货物能够到达任何目的地</p>
+        </div>
+        <div class="feature">
+            <img src="https://csd-trans.com/images/icons/tracking.png" alt="先进技术">
+            <h4>先进技术</h4>
+            <p>采用最新的物流技术，提供实时追踪和智能管理</p>
+        </div>
+        <div class="feature">
+            <img src="https://csd-trans.com/images/icons/customer.png" alt="定制服务">
+            <h4>定制服务</h4>
+            <p>根据您的具体需求，提供个性化的物流解决方案</p>
+        </div>
+        <div class="feature">
+            <img src="https://csd-trans.com/images/icons/safety.png" alt="安全保障">
+            <h4>安全保障</h4>
+            <p>严格的安全标准和保险保障，确保货物安全送达</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>准备好开始您的运输之旅了吗？</h2>
+        <p>联系我们获取专业的物流解决方案</p>
+        <a href="https:&#x2F;&#x2F;csd-trans.com/contact" class="cta-button">联系我们</a>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 地址: 深圳市龙岗区坂田街道大发埔社区大发路24号文坑工业区6栋101-102</p>
+                <p><i class="fas fa-envelope"></i> 邮箱: caihaiping@csd-trans.com </p>
+                <p><i class="fas fa-phone"></i> 电话: +86 13631603407</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 创顺达国际物流（深圳）有限公司. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="https://csd-trans.com/js/main.js"></script>
+    
+</body>
+</html> 
