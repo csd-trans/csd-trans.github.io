@@ -1,46 +1,50 @@
 {% extends "base.html" %}
 
 {% block content %}
+<style>
+    .about-hero {
+        background-color: #1a1a1a;
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+    .about-hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .about-hero h1 {
+        color: #ffffff;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+    .about-hero p {
+        text-indent: 2em;
+        line-height: 1.8;
+        color: #ffffff;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    .story p {
+        text-indent: 2em;
+        margin-bottom: 1rem;
+    }
+</style>
+
 <section class="about-hero">
     <div class="about-hero-content">
         <h1>关于我们</h1>
-        <p>创顺达国际物流（深圳）有限公司</p>
+        <p>创顺达国际物流（深圳）有限公司是经国家有关部门批准，工商行政管理局注册、税务部门注册登记具有独立法人资格的专业从事国际货物运输,物流服务,包括快递、海运、空运进出口，海外仓等以及个性化创新型的物流服务服务。公司自身还有空运渠道和直达日本的专线服务，仓位保障、价格稳定、通关便捷、支持全程跟踪。公司以"诚实守信、合法经营"为企业宗旨，不断顺应市场需求，完善自身服务体系，为客户提供稳定、安全、优质、可靠的服务。</p>
+        <p>公司成立以来，建立先进的管理理念和资源优势，拥有一批专业的国际物流从业人员长达10年以上的物流经验，通过专业的服务，满足客户的物流出口需求，达到双赢。</p>
     </div>
 </section>
 
-<section class="about-intro">
+<!-- <section class="about-intro">
     <div class="about-content">
         <h2>我们的故事</h2>
-        <p>创顺达国际物流（深圳）有限公司是经国家有关部门批准，工商行政管理局注册、税务部门注册登记具有独立法人资格的专业从事国际货物运输,物流服务,包括快递、海运、空运进出口，海外仓等以及个性化创新型的物流服务服务。公司自身还有空运渠道和直达日本的专线服务，仓位保障、价格稳定、通关便捷、支持全程跟踪。公司以“诚实守信、合法经营”为企业宗旨，不断顺应市场需求，完善自身服务体系，为客户提供稳定、安全、优质、可靠的服务。
-公司成立以来，建立先进的管理理念和资源优势，拥有一批专业的国际物流从业人员长达10年以上的物流经验，通过专业的服务，满足客户的物流出口需求，达到双赢。</p>
+        <p>创顺达国际物流（深圳）有限公司是经国家有关部门批准，工商行政管理局注册、税务部门注册登记具有独立法人资格的专业从事国际货物运输,物流服务,包括快递、海运、空运进出口，海外仓等以及个性化创新型的物流服务服务。公司自身还有空运渠道和直达日本的专线服务，仓位保障、价格稳定、通关便捷、支持全程跟踪。公司以"诚实守信、合法经营"为企业宗旨，不断顺应市场需求，完善自身服务体系，为客户提供稳定、安全、优质、可靠的服务。公司成立以来，建立先进的管理理念和资源优势，拥有一批专业的国际物流从业人员长达10年以上的物流经验，通过专业的服务，满足客户的物流出口需求，达到双赢。</p>
     </div>
-</section>
+</section> -->
 
-<section class="team-section">
-    <div class="team-content">
-        <h2>我们的团队</h2>
-        <div class="team-grid">
-            <div class="team-member">
-                <img src="{{ get_url(path='images/team/ceo.jpg') }}" alt="CEO">
-                <h3>张明</h3>
-                <p class="position">首席执行官</p>
-                <p class="bio">拥有20年物流行业经验，带领团队不断创新，为客户提供优质服务。</p>
-            </div>
-            <div class="team-member">
-                <img src="{{ get_url(path='images/team/coo.jpg') }}" alt="运营总监">
-                <h3>李华</h3>
-                <p class="position">运营总监</p>
-                <p class="bio">负责公司日常运营管理，确保物流服务的高效执行。</p>
-            </div>
-            <div class="team-member">
-                <img src="{{ get_url(path='images/team/cto.jpg') }}" alt="客户服务总监">
-                <h3>王芳</h3>
-                <p class="position">客户服务总监</p>
-                <p class="bio">致力于为客户提供24/7的专业支持和服务。</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="values-section">
     <div class="values-content">
